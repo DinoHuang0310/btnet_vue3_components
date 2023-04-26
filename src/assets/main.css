@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* color schema */
+:root {
+  --color-primary: #41b883;
+  --color-secondary: #34495e;
+}
+
+html {
+  font-family: 'Noto Sans TC', sans-serif, 'Microsoft JhengHei', arial;
+  /* font-size: 1vw; */
+  letter-spacing: 0.1rem;
+}
+/* @media screen and (min-width: 2400px) {
+  html {
+    font-size: 0.9vw;
+  }
+}
+@media screen and (max-width: 1920px) {
+  html {
+    font-size: 1.1vw;
+  }
+}
+@media screen and (max-width: 1440px) {
+  html {
+    font-size: 1.3vw;
+  }
+}
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 1.6vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 2vw;
+  }
+}
+@media screen and (max-width: 640px) {
+  html {
+    font-size: 3vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 4.2vw;
+  }
+}
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 4.5vw;
+  }
+} */
