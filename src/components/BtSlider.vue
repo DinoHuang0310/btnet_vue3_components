@@ -40,7 +40,7 @@
 </template>
 
 <script>
-import { onMounted, ref, watch, nextTick } from 'vue';
+import { onMounted, onUnmounted, ref, watch, nextTick } from 'vue';
 
 import Swiper from 'swiper';
 import 'swiper/swiper-bundle.min.css';
@@ -107,6 +107,10 @@ export default {
           prevEl: prevRef.value,
         },
       });
+    })
+
+    onUnmounted(() => {
+      swiper.destroy();
     })
 
     return {
