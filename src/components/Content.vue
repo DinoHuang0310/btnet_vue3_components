@@ -11,6 +11,8 @@
 
     <ScrollToExample id="scroll-to" class="py-20" />
 
+    <YoutubeExample id="youtube" class="py-20" />
+
   </div>
 </template>
 
@@ -20,5 +22,6 @@ import ClientSizeExample from '../components/examples/ClientSizeExample.vue';
 import WindowScrollExample from '../components/examples/WindowScrollExample.vue';
 import LightBoxExample from '../components/examples/LightBoxExample.vue';
 import ScrollToExample from '../components/examples/ScrollToExample.vue';
+import YoutubeExample from '../components/examples/YoutubeExample.vue';
 
 </script>

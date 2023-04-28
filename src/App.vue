@@ -78,6 +78,11 @@ const navList = ref([
     isAnchor: true,
   },
   {
+    title: "YouTube player",
+    url: "#youtube",
+    isAnchor: true,
+  },
+  {
     title: "demo",
     navList: [
       {
