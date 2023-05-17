@@ -1,8 +1,8 @@
 import { ref, computed } from 'vue';
 
-const scrollTop = ref(0);
+const scrollTop = ref<number>(0);
 
-const update = () => {
+const update = function(): void {
   const y = window.pageYOffset || document.documentElement.scrollTop;
 
   scrollTop.value = y;
@@ -10,9 +10,9 @@ const update = () => {
 window.addEventListener('scroll', update);
 update();
 
-export default (breakPoint = 0) => {
+export default (breakPoint: number = 0) => {
 
-  const overY = computed(() => scrollTop.value > breakPoint);
+  const overY = computed<boolean>(() => scrollTop.value > breakPoint);
 
   return {
     scrollTop,
