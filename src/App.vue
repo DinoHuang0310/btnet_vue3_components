@@ -65,6 +65,11 @@ const navList = ref([
         url: "#scroll-to",
         isAnchor: true,
       },
+      {
+        title: "檔案下載",
+        url: "#download-file",
+        isAnchor: true,
+      },
     ]
   },
   {

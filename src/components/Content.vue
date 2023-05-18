@@ -13,6 +13,8 @@
 
     <YoutubeExample id="youtube" class="py-20" />
 
+    <DownloadFileExample id="download-file" class="py-20" />
+
   </div>
 </template>
 
@@ -23,5 +25,6 @@ import WindowScrollExample from '../components/examples/WindowScrollExample.vue'
 import LightBoxExample from '../components/examples/LightBoxExample.vue';
 import ScrollToExample from '../components/examples/ScrollToExample.vue';
 import YoutubeExample from '../components/examples/YoutubeExample.vue';
+import DownloadFileExample from '../components/examples/DownloadFileExample.vue';
 
 </script>
