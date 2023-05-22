@@ -7,20 +7,23 @@ import { createHtmlPlugin } from 'vite-plugin-html'
 
 // https://vitejs.dev/config/
 export default defineConfig(({ command, mode, ssrBuild }) => {
+  const isDev = command === 'serve';
+
   return {
+    base: isDev ? '/' : './',
     plugins: [
       vue(),
       viteMockServe({
         // default
         mockPath: 'mock',
-        localEnabled: command === 'serve',
+        localEnabled: isDev,
       }),
       createHtmlPlugin({
         minify: true,
         inject: {
           data: {
             projectName: 'vue-project',
-            injectScript: command === 'serve' ? 
+            injectScript: isDev ? 
               '' :
               `<script async src="https://www.googletagmanager.com/gtag/js?id=UA-4950332-1"></script>
               <script>
