@@ -91,7 +91,7 @@ export default {
         e.preventDefault();
         try {
           const targetId = url.split('#')[1];
-          useScrollTo(document.getElementById(targetId).offsetTop);
+          useScrollTo(document.getElementById(targetId));
         } catch (error) {
           console.warn(error)
         }
