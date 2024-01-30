@@ -25,12 +25,12 @@ export default defineConfig(({ command, mode, ssrBuild }) => {
             projectName: 'vue-project',
             injectScript: isDev ? 
               '' :
-              `<script async src="https://www.googletagmanager.com/gtag/js?id=UA-4950332-1"></script>
+              `<script async src="https://www.googletagmanager.com/gtag/js?id=G-E8QKRYXRLQ"></script>
               <script>
                 window.dataLayer = window.dataLayer || [];
                 function gtag() { dataLayer.push(arguments); }
                 gtag('js', new Date());
-                gtag('config', 'UA-4950332-1');
+                gtag('config', 'G-E8QKRYXRLQ');
               </script>`,
           }
         },
