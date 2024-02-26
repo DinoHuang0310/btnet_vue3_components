@@ -3,7 +3,7 @@ export default (target: number | HTMLElement, callBack: Function = () => null) =
   let top: number = 0
 
   const onScroll = (): void => {
-    if (window.scrollX.toFixed() === top.toFixed()) {
+    if (window.scrollY.toFixed() === top.toFixed()) {
       window.removeEventListener('scroll', onScroll);
       try {
         callBack();
