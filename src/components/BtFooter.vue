@@ -3,7 +3,7 @@
     <div class="space-y-1 text-sm text-white">
       <p>內容監製: 今周刊</p>
       <p>專題製作:｜今周刊 數位內容部</p>
-      <p>Copyright © {{ year }} 今周刊.All rights reserved. 版權所有，禁止擅自轉貼節錄</p>
+      <p>{{ copyright }}</p>
     </div>
     
     <div v-if="showFloatButton" class="fixed right-0 top-1/2 -translate-y-1/2">
@@ -31,6 +31,7 @@ export default {
     const year = new Date().getFullYear();
     const { height } = useClientSize();
     const { scrollTop } = useWindowScroll();
+    const copyright = import.meta.env.VITE_COPYRIGHT
 
     const showFloatButton = computed(() => {
       return props.showFloat && scrollTop.value > height.value / 2;
@@ -40,6 +41,7 @@ export default {
       year,
       showFloatButton,
       useScrollTo,
+      copyright,
     }
   }
   
